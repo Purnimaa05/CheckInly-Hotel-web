@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Available Rooms - CheckInly</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <img src="images/logo.webp" alt="CheckInly Logo" />
+      <h1><span>Check</span>Inly</h1>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="login.html">Login</a>
+      <a href="reserve.html">Reserve</a>
+      <a href="rooms.html">Rooms</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <section class="room-list-section">
+    <h2 class="section-title">Available Rooms</h2>
+    <div class="room-list">
+      <div class="room-card">
+        <img src="images/standard-room.jpg" alt="Standard Room" />
+        <h3>Standard Room</h3>
+        <p>Perfect for solo travelers or short stays. Comfortable and budget-friendly.</p>
+        <p class="price">₹1,500 / night</p>
+        <button class="book-btn" onclick="window.location.href='confirm.html?room=Standard Room'">Book Now</button>
+       
+        
+
+      </div>
+      <div class="room-card">
+        <img src="images/deluxe-room.jpg" alt="Deluxe Room" />
+        <h3>Deluxe Room</h3>
+        <p>Spacious and stylish, great for couples and families. Includes complimentary breakfast.</p>
+        <p class="price">₹2,500 / night</p>
+        <button class="book-btn" onclick="window.location.href='confirm.html?room=Deluxe Room'">Book Now</button>
+
+      </div>
+      <div class="room-card">
+        <img src="images/suite-room.jpg" alt="Suite" />
+        <h3>Luxury Suite</h3>
+        <p>Top-tier luxury with a private lounge, balcony view, and personalized services.</p>
+        <p class="price">₹4,500 / night</p>
+        <button class="book-btn" onclick="window.location.href='confirm.html?room=Luxury Suite'">Book Now</button>
+
+      </div>
+    </div>
+  </section>
+  <script>
+  function bookNow(roomType) {
+    alert("You have selected: " + roomType + "\nProceeding to booking...");
+  }
+</script>
+</body>
+</html>
