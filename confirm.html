@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Booking Confirmation - CheckInly</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <img src="images/logo.webp" alt="CheckInly Logo" />
+      <h1><span>Check</span>Inly</h1>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="login.html">Login</a>
+      <a href="reserve.html">Reserve</a>
+      <a href="rooms.html">Rooms</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <section class="confirmation-section">
+    <div class="confirmation-box">
+      <h2>🎉 Booking Confirmed!</h2>
+      <p>Thank you for choosing <strong>CheckInly</strong>.</p>
+      <p>Your <span id="roomTypeText">room</span>room has been successfully booked.</p>
+      <a href="index.html" class="go-home-btn">Back to Home</a>
+    </div>
+  </section>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const room = params.get("room");
+    if (room) {
+      document.getElementById("roomTypeText").innerText = room;
+    }
+  </script>
+</body>
+</html>
