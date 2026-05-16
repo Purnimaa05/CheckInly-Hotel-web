@@ -22,35 +22,53 @@
   </header>
 
   <section class="room-list-section">
-    <h2 class="section-title">Available Rooms</h2>
+    <h2 class="section-title">Explore Our Luxury Rooms</h2>
     <div class="room-list">
       <div class="room-card">
+        <div class="room-badge">Popular</div>
         <img src="images/standard-room.jpg" alt="Standard Room" />
+        <div class="room-content">
         <h3>Standard Room</h3>
-        <p>Perfect for solo travelers or short stays. Comfortable and budget-friendly.</p>
-        <p class="price">₹1,500 / night</p>
+        <p class="room-description">
+           Perfect for solo travelers or short stays. Comfortable and budget-friendly.
+        </p>
+        <p class="price">
+          ₹1,500  <span>/ night</span>
+        </p>
         <button class="book-btn" onclick="window.location.href='confirm.html?room=Standard Room'">Book Now</button>
-       
-        
-
+        </div>
       </div>
       <div class="room-card">
+        <div class="room-badge luxury">Best Seller</div>
         <img src="images/deluxe-room.jpg" alt="Deluxe Room" />
+        <div class="room-content">
         <h3>Deluxe Room</h3>
-        <p>Spacious and stylish, great for couples and families. Includes complimentary breakfast.</p>
-        <p class="price">₹2,500 / night</p>
+         <p class="room-description">
+           Spacious and stylish, great for couples and families. Includes complimentary breakfast.
+        </p>
+        <p class="price">
+          ₹2,500 <span>/ night</span>
+        </p>
         <button class="book-btn" onclick="window.location.href='confirm.html?room=Deluxe Room'">Book Now</button>
+        </div>
 
       </div>
       <div class="room-card">
-        <img src="images/suite-room.jpg" alt="Suite" />
+         <div class="room-badge premium">Premium</div>
+        <img src="images/suite-room.jpg" alt="Luxury Suite" />
+        <div class="room-content">
         <h3>Luxury Suite</h3>
-        <p>Top-tier luxury with a private lounge, balcony view, and personalized services.</p>
-        <p class="price">₹4,500 / night</p>
+        <p class="room-description">
+          Top-tier luxury with a private lounge, balcony view, and personalized services.
+        </p>
+        <p class="price">
+          ₹4,500  <span>/ night</span>
+        </p>
         <button class="book-btn" onclick="window.location.href='confirm.html?room=Luxury Suite'">Book Now</button>
 
       </div>
     </div>
+  </div>
   </section>
   <script>
   function bookNow(roomType) {
